@@ -37,6 +37,6 @@ class LinearRegression:
         plt.plot(self.loss_history)
         plt.xlable('Iterations')
         plt.ylable('Loss')
-        plt.title('loss function')
+        plt.title('Loss Function')
         plt.show()
 #测试
