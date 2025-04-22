@@ -1,6 +1,7 @@
 #归一化处理
 #导入工具包
 from sklearn.preprocessing import MinMaxScaler
+#标准化处理
 from sklearn.preprocessing import StandardScaler
 from sklearn.preprocessing import Normalizer
 #数据
