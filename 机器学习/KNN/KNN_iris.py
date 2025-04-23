@@ -24,7 +24,7 @@ ss=StandardScaler()
 x_train=ss.fit_transform(x_train)
 x_test=ss.transform(x_test)
 #模型训练
-model=KNeighborsClassifier(n_neighbors=1)
+model=KNeighborsClassifier(n_neighbors=2)
 #交叉验证网络搜索,找出最合适的超参数
 paras_grid={'n_neighbors':[1,3,5,7,9]}
 estimator=GridSearchCV(model,paras_grid,cv=4)
