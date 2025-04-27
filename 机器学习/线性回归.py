@@ -1,8 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import sklearn as sk
 plt.rcParams["font.sans-serif"] = ["SimHei"]  # 设置默认字体为黑体
 plt.rcParams["axes.unicode_minus"] = False    # 解决负号显示问题
-
 class LinearRegression:
     def __init__(self, learning_rate=0.01, n_iterations=1000):
         self.learning_rate = learning_rate #学习率
@@ -46,31 +46,31 @@ class LinearRegression:
         plt.title('损失函数收敛')
         plt.show()
 
-if __name__ == "__main__":
-    # 生成数据并确保y是一维数组 
-    np.random.seed(42) # 设置随机种子以保证结果可复现
-    X = 2 * np.random.rand(100, 1)
-    y = 4 + 3 * X + np.random.randn(100, 1)
-    y = y.flatten()  # 关键修改：将y从(100,1)变为(100,)
+# if __name__ == "__main__":
+#     # 生成数据并确保y是一维数组 
+#     np.random.seed(42) # 设置随机种子以保证结果可复现
+#     X = 2 * np.random.rand(100, 1) #
+#     y = 4 + 3 * X + np.random.randn(100, 1)
+#     y = y.flatten()  # 关键修改：将y从(100,1)变为(100,)
     
-    # 创建并训练模型
-    model = LinearRegression(learning_rate=0.1, n_iterations=100)
-    model.fit(X, y)
+#     # 创建并训练模型
+#     model = LinearRegression(learning_rate=0.1, n_iterations=100)
+#     model.fit(X, y)
     
-    # 预测
-    X_new = np.array([[0], [2]])
-    y_pred = model.predict(X_new)
+#     # 预测
+#     X_new = np.array([[0], [2]])
+#     y_pred = model.predict(X_new)
     
-    print(f"Weights: {model.weights[0]:.4f}")
-    print(f"Bias: {model.bias:.4f}")
+#     print(f"Weights: {model.weights[0]:.4f}")
+#     print(f"Bias: {model.bias:.4f}")
     
-    # 绘制结果
-    plt.scatter(X, y, alpha=0.5)
-    plt.plot(X_new, y_pred, 'r-', linewidth=2, label='Predictions')
-    plt.xlabel('X')
-    plt.ylabel('y')
-    plt.legend()
-    plt.show()
+#     # 绘制结果
+#     plt.scatter(X, y, alpha=0.5)
+#     plt.plot(X_new, y_pred, 'r-', linewidth=2, label='Predictions')
+#     plt.xlabel('X')
+#     plt.ylabel('y')
+#     plt.legend()
+#     plt.show()
     
-    # 绘制损失曲线
-    model.plot_loss()
+#     # 绘制损失曲线
+#     model.plot_loss()

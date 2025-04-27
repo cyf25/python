@@ -6,6 +6,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression as LR
 from sklearn.metrics import accuracy_score
 import numpy as np
+from sklearn.metrics import recall_score,precision_score
 #导入数据
 data=pd.read_csv(r'D:\BaiduNetdiskDownload\day4\breast-cancer-wisconsin.csv')
 #数据预处理
@@ -32,4 +33,10 @@ score=accuracy_score(y_test,y_predict)
 print(y_predict)
 print(score)
 
-#模型预测
+#模型精确率
+print(precision_score(y_test,y_predict,pos_label=4))
+#模型召回率（查全率）
+print(recall_score(y_test,y_predict,pos_label=4))
+
+#模型F1值
+print(2*precision_score(y_test,y_predict,pos_label=4)*recall_score(y_test,y_predict,pos_label=4)/(precision_score(y_test,y_predict,pos_label=4)+recall_score(y_test,y_predict,pos_label=4)))
