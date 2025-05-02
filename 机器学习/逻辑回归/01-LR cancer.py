@@ -32,11 +32,9 @@ y_predict=model.predict(x_test)
 score=accuracy_score(y_test,y_predict)
 print(y_predict)
 print(score)
-
 #模型精确率
 print(precision_score(y_test,y_predict,pos_label=4))
 #模型召回率（查全率）
 print(recall_score(y_test,y_predict,pos_label=4))
-
 #模型F1值
 print(2*precision_score(y_test,y_predict,pos_label=4)*recall_score(y_test,y_predict,pos_label=4)/(precision_score(y_test,y_predict,pos_label=4)+recall_score(y_test,y_predict,pos_label=4)))
