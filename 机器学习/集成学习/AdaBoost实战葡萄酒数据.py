@@ -33,3 +33,4 @@ score1=accuracy_score(test_y,y_pre1)
 score2=accuracy_score(test_y,y_pre2)
 print(score1,score2)
 
+ 
