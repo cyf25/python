@@ -19,7 +19,7 @@ x=pd.get_dummies(x,dtype='int64')
 x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2)
 #模型训练
 #随机森林模型
-rf=RandomForestClassifier(n_estimators=70,max_depth=7)
+rf=RandomForestClassifier()
 rf.fit(x_train,y_train)
 #交叉验证网络搜索
 rf1=GridSearchCV(rf,{'n_estimators':[10,20,30,40,50,60,70,80,90,100],'max_depth':[3,4,5,6,7,8,9,10]},cv=5)
