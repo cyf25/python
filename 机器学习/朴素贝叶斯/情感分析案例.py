@@ -60,7 +60,7 @@ def extract_features(text_list, stopwords):
 
 def split_data(X, y, split_index):
     """
-    划分训练集和测试集
+    划分训练集和测试集 
     :param X: 特征矩阵
     :param y: 标签
     :param split_index: 划分索引
