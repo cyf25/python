@@ -1,0 +1,27 @@
+{
+  "name": "智能日程管理助手",
+  "version": "1.0.0",
+  "description": "一个智能日程管理助手，提供日历、提醒和天气功能。",
+  "main": "src/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.4",
+    "vite": "^6.3.5",
+    "vue-router": "^4.0.0"
+  },
+  "keywords": [
+    "vue",
+    "日程管理",
+    "助手"
+  ],
+  "author": "你的名字",
+  "license": "MIT"
+}
