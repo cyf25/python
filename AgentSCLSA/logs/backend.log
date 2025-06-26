@@ -1,0 +1,20 @@
+INFO:     Will watch for changes in these directories: ['D:\\Cursorproject']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [35968] using StatReload
+INFO:     Started server process [23804]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:55183 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59037 - "GET /services HTTP/1.1" 200 OK
+2025-06-22 23:54:26,952 - httpx - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:59048 - "POST /chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59081 - "GET /services HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59148 - "GET /services HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59152 - "GET /services HTTP/1.1" 200 OK
+2025-06-22 23:55:18,493 - httpx - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:59157 - "POST /chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50455 - "GET /services HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [23804]

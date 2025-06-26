@@ -1,0 +1,3 @@
+code,name,credits,instructor,schedule,location,description,capacity,enrolled
+CS101,计算机科学导论,3,张教授,"周一 9:00-10:30, 周三 9:00-10:30",教学楼A101,计算机科学基础课程，介绍编程概念和算法思维,50,35
+MATH201,高等数学,4,李教授,"周二 14:00-15:30, 周四 14:00-15:30",教学楼B201,微积分和线性代数基础,60,45 
